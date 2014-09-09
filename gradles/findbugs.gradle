@@ -1,0 +1,37 @@
+apply plugin: 'findbugs'
+
+findbugs {
+  //toolVersion = "2.0.1"
+  //sourceSets = [sourceSets.test]
+  ignoreFailures = true
+  reportsDir = file("$project.buildDir/reports/findbugs")
+  effort = "max"
+  reportLevel = "low"
+  //reportLevel = "high"
+  //visitors = ["FindSqlInjection", "SwitchFallthrough"]
+  //omitVisitors = ["FindNonShortCircuit"]
+  //includeFilter = file("$rootProject.projectDir/config/findbugs/includeFilter.xml")
+  //excludeFilter = file("$rootProject.projectDir/config/findbugs/excludeFilter.xml")
+}
+
+
+findbugsMain {
+  reports {
+    xml { enabled = false }
+    html {
+      enabled = true
+      destination "$project.buildDir/reports/findbugs/findbugsMain.html"
+    }
+  }
+}
+
+findbugsTest {
+  reports {
+    xml { enabled = false }
+    html {
+      enabled = true
+      destination "$project.buildDir/reports/findbugs/findbugsTest.html"
+    }
+  }
+}
+

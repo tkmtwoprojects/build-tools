@@ -1,0 +1,7 @@
+
+compileJava {
+    options.compilerArgs << '-Xlint:unchecked,deprecation'
+}
+compileTestJava {
+    options.compilerArgs << '-Xlint:unchecked,deprecation'
+}

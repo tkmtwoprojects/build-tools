@@ -1,0 +1,22 @@
+
+ext {
+  avroVersion = '1.7.7'
+  commonsCodecVersion = '1.9'
+  commonsPoolVersion = '1.6'
+  guavaVersion = '17.0'
+  jacksonVersion = '2.4.2'
+  jodaTimeVersion = '2.4'
+  junitVersion = '4.11'
+  logbackVersion = '1.1.2'
+  mockitoVersion = '1.9.5'
+  mybatisVersion = '3.2.5'
+  slf4jVersion = '1.7.7'
+  springFrameworkVersion = '4.0.6.RELEASE'
+  springSecurityVersion = '3.2.5.RELEASE'
+  tkmtwoInterpolateVersion = '1.2.0'
+  tkmtwoUtilityVersion = '1.0.1'
+  tkmtwoSarapiVersion = '0.6.0'
+  tkmtwoTimexVersion = '1.4.0'
+  xercesVersion = '2.11.0'
+  xstreamVersion = '1.4.7'
+}

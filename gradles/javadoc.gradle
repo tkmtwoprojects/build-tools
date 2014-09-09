@@ -1,0 +1,16 @@
+
+
+ext.javadocLinks = [
+  "http://docs.oracle.com/javase/7/docs/api/",
+  "http://docs.spring.io/spring/docs/current/javadoc-api/",
+  "http://www.joda.org/joda-time/apidocs/"
+] as String[]
+
+
+
+javadoc {
+  options.author = true
+  options.header = rootProject.name
+  title = rootProject.name
+  options.links(project.ext.javadocLinks)
+}
